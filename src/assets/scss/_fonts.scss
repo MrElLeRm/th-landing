@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 400;
+  src:
+          url("~@/assets/fonts/ProximaNova/ProximaNova-Regular.woff") format('woff'),
+          url("~@/assets/fonts/ProximaNova/ProximaNova-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 500;
+  src:
+          url("~@/assets/fonts/ProximaNova/ProximaNova-Semibold.woff") format('woff'),
+          url("~@/assets/fonts/ProximaNova/ProximaNova-Semibold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 600;
+  src:
+          url("~@/assets/fonts/ProximaNova/ProximaNova-Bold.woff") format('woff'),
+          url("~@/assets/fonts/ProximaNova/ProximaNova-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  src:
+          url("~@/assets/fonts/Montserrat/Montserrat-SemiBold.woff") format('woff'),
+          url("~@/assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  font-weight: 400;
+  src:
+          url("~@/assets/fonts/e-Ukraine-Regular.ttf") format('truetype'),
+          url("~@/assets/fonts/e-Ukraine-Regular.woff") format('woff'),
+          url("~@/assets/fonts/e-Ukraine-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  font-weight: bold;
+  src:
+          url("~@/assets/fonts/e-Ukraine-Bold.ttf") format('truetype'),
+          url("~@/assets/fonts/e-Ukraine-Bold.woff") format('woff'),
+          url("~@/assets/fonts/e-Ukraine-Bold.woff2") format('woff2');
+}
