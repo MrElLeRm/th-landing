@@ -79,7 +79,9 @@
             </svg>
           </div>
           <div class="how-start__item-title">Сообщение</div>
-          <div class="how-start__item-text">Получаете код активации в SMS.</div>
+          <div class="how-start__item-text">
+            Получаете ссылку для доступа в мессенджер
+          </div>
         </div>
         <div
           class="how-start__item wow fadeInUp"

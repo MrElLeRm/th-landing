@@ -13,14 +13,10 @@
       </div>
       <div class="header__nav" :class="{ active: mobileMenuOpened }">
         <a
-          class="header__nav-link button button--empty"
-          href="//app.tenderhelp.com.ua"
-          >Логин</a
-        >
-        <a
+          target="_blank"
           class="header__nav-link button button--accent button--small"
-          href="//app.tenderhelp.com.ua"
-          >Попробовать бесплатно</a
+          href="//app.tenderhelp.com.ua/login"
+          >Вход для пользователя</a
         >
       </div>
     </div>

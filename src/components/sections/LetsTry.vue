@@ -1,5 +1,5 @@
 <template>
-  <div class="lets-try">
+  <div class="lets-try" id="lets-try">
     <div class="container">
       <div
         class="lets-try__dot wow fadeInDownBig"
@@ -10,11 +10,12 @@
       </div>
       <div class="lets-try__input wow fadeInUp" data-wow-duration="0.5s">
         <div class="input simple">
-          <div class="input__label">Email</div>
+          <div class="input__label">Телефон</div>
           <input
             type="text"
             class="input__el"
             name="phone-email"
+            placeholder="+380 "
             title="Email"
           />
         </div>

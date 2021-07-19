@@ -3,11 +3,18 @@
     <div class="container wow fadeInDown" data-wow-duration="0.5s">
       <div class="footer__copyright">Copyright © 2021 Tenderhelp.</div>
       <div class="footer__links">
-        <a href="#" class="footer__link link link--default"
+        <a
+          href="/docs/agreement.pdf"
+          target="_blank"
+          class="footer__link link link--default"
           >Условия использования</a
         >
         <a href="#" class="footer__link link link--default">Публичная оферта</a>
-        <a href="#" class="footer__link footer__link--icon link link--default">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/tenderhelp.com.ua"
+          class="footer__link footer__link--icon link link--default"
+        >
           <svg
             width="40"
             height="40"

@@ -24,23 +24,23 @@
         data-wow-duration="0.5s"
         data-wow-delay="0.2s"
       >
-        Меньше стресса — <br />больше тендеров
+        Тендер — это просто
       </div>
       <div
         class="header-banner__sub-title wow fadeInUp"
         data-wow-duration="0.5s"
         data-wow-delay="0.3s"
       >
-        Сервис автоматизации процесса подготовки документов для победы <br />
-        в тендерных торгах и открытых закупках.
+        Сервис автоматической подготовки документов, <br />
+        для тендерных торгов и открытых закупок
       </div>
       <div
         class="header-banner__link wow fadeInUp"
         data-wow-duration="0.5s"
         data-wow-delay="0.4s"
       >
-        <a href="//app.tenderhelp.com.ua" class="button button--white"
-          >Начать роботу с beta бесплатно</a
+        <span class="button button--white" @click="scrollToId('lets-try')"
+          >Начать роботу с beta бесплатно</span
         >
       </div>
 
@@ -77,7 +77,10 @@
 </template>
 
 <script>
+import scrollToMixin from "@/mixins/scroll-to-mixin";
+
 export default {
+  mixins: [scrollToMixin],
   name: "HeaderBanner",
 };
 </script>

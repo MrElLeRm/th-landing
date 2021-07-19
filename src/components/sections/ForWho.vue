@@ -3,10 +3,6 @@
     <div class="container">
       <div class="for-who__info wow fadeInLeft" data-wow-duration="0.5s">
         <div class="for-who__title">Для кого</div>
-        <div class="for-who__sub-title">
-          Для тех кто хочет работать с государственными компаниями
-          по&#8209;человечески.
-        </div>
       </div>
       <div class="for-who__list">
         <div
@@ -33,7 +29,7 @@
             </svg>
           </div>
           <div class="for-who__item-title">
-            Для опытных игроков — точность и контроль
+            Для постоянных участников тендеров
           </div>
           <div class="for-who__item-text">
             для компаний, которые регулярно принимают участие в тендерных торгах
@@ -61,8 +57,7 @@
             </svg>
           </div>
           <div class="for-who__item-title">
-            Для новичков — <br />
-            лёгкий старт
+            Для начинающих в государственных закупках
           </div>
           <div class="for-who__item-text">
             для бизнесов, которые входят на рынок государственных закупок.
@@ -89,8 +84,7 @@
             </svg>
           </div>
           <div class="for-who__item-title">
-            Для консалтинга — <br />
-            удобство и скорость
+            Для тендерных специалистов на фрилансе
           </div>
           <div class="for-who__item-text">
             для компаний, которые готовят тендерные документы под заказ и ценят
@@ -124,6 +118,7 @@ export default {
     margin-right: 44px;
     flex-shrink: 0;
     flex-grow: 0;
+    margin-top: 75px;
   }
 
   &__title {
