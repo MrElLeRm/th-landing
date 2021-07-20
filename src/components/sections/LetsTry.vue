@@ -79,7 +79,9 @@ export default {
     createLead() {
       this.formSubmitted = true;
       this.$v.$touch();
-
+      this.$swal(
+        "Ваша заявка принята!<br/>В ближайшее время мы с вами свяжемся."
+      );
       if (!this.$v.$invalid) {
         new ClientApi()
           .saveClient(this.clientName, this.clientPhone)
@@ -142,6 +144,27 @@ export default {
       }
     }
   }
+}
+
+button.swal2-confirm.swal2-styled {
+  font-size: 1rem;
+  line-height: 1.4285714286rem;
+  padding: 10px 24px;
+  text-decoration: none;
+  border: none;
+  background-color: #4050e8;
+  color: #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: "ProximaNova", sans-serif;
+}
+
+h2#swal2-title {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 400;
+  font-size: pxToRem(24);
 }
 
 @media screen and (max-width: 650px) {
