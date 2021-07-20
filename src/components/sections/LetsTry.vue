@@ -10,26 +10,87 @@
       </div>
       <div class="lets-try__input wow fadeInUp" data-wow-duration="0.5s">
         <div class="input simple">
+          <div class="input__label">Имя</div>
+          <input
+            type="text"
+            class="input__el"
+            name="name"
+            placeholder="Петр Иванов"
+            title="Имя"
+            v-model="$v.clientName.$model"
+          />
+          <div
+            class="input__error"
+            v-if="formSubmitted && !$v.clientName.required"
+          >
+            Имя должено быть заполнено
+          </div>
+        </div>
+        <div class="input simple">
           <div class="input__label">Телефон</div>
           <input
             type="text"
             class="input__el"
-            name="phone-email"
-            placeholder="+380 "
-            title="Email"
+            name="phone"
+            placeholder="+38"
+            title="Телефон"
+            v-model="$v.clientPhone.$model"
+            v-maska="'+38 (###) ###-##-##'"
           />
+          <div
+            class="input__error"
+            v-if="formSubmitted && !$v.clientPhone.required"
+          >
+            Телефон должен быть заполнен
+          </div>
         </div>
       </div>
       <div class="lets-try__button wow fadeInUp" data-wow-duration="0.5s">
-        <button class="button button--accent">Получить тестовый доступ</button>
+        <button class="button button--accent" @click="createLead">
+          Получить тестовый доступ
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { ClientApi } from "@/services/client-api";
+import { required } from "vuelidate/lib/validators";
+
 export default {
   name: "LetsTry",
+  data() {
+    return {
+      clientName: "",
+      clientPhone: "",
+      formSubmitted: false,
+    };
+  },
+  validations: {
+    clientName: {
+      required,
+    },
+    clientPhone: {
+      required,
+    },
+  },
+  methods: {
+    createLead() {
+      this.formSubmitted = true;
+      this.$v.$touch();
+
+      if (!this.$v.$invalid) {
+        new ClientApi()
+          .saveClient(this.clientName, this.clientPhone)
+          .then(() =>
+            this.$swal(
+              "Ваша заявка принята!<br/>В ближайшее время мы с вами свяжемся."
+            )
+          );
+      }
+    },
+  },
 };
 </script>
 
