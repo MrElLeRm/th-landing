@@ -2,7 +2,7 @@
   <div class="how-start">
     <div class="container">
       <div class="how-start__info wow fadeInLeft" data-wow-duration="0.5s">
-        <div class="how-start__title">Как начать работу</div>
+        <div class="how-start__title">{{ $t("Как начать работу") }}</div>
       </div>
       <div class="how-start__list">
         <div
@@ -39,9 +39,9 @@
               />
             </svg>
           </div>
-          <div class="how-start__item-title">Запрос</div>
+          <div class="how-start__item-title">{{ $t("Запрос") }}</div>
           <div class="how-start__item-text">
-            Оставляете номер телефона при регистрации.
+            {{ $t("Оставляете номер телефона при регистрации.") }}
           </div>
         </div>
         <div
@@ -78,9 +78,9 @@
               />
             </svg>
           </div>
-          <div class="how-start__item-title">Сообщение</div>
+          <div class="how-start__item-title">{{ $t("Сообщение") }}</div>
           <div class="how-start__item-text">
-            Получаете ссылку для доступа в мессенджер
+            {{ $t("Получаете уведомление об активации") }}
           </div>
         </div>
         <div
@@ -103,8 +103,10 @@
               />
             </svg>
           </div>
-          <div class="how-start__item-title">Старт</div>
-          <div class="how-start__item-text">Пользуетесь сервисом.</div>
+          <div class="how-start__item-title">{{ $t("Старт") }}</div>
+          <div class="how-start__item-text">
+            {{ $t("Пользуетесь сервисом.") }}
+          </div>
         </div>
       </div>
     </div>

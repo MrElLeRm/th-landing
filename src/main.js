@@ -15,6 +15,7 @@ import Vuelidate from "vuelidate";
 Vue.use(Vuelidate);
 
 import Maska from "maska";
+import i18n from "./i18n";
 Vue.use(Maska);
 
 Vue.config.productionTip = false;
@@ -22,5 +23,6 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  i18n,
   render: (h) => h(App),
 }).$mount("#app");

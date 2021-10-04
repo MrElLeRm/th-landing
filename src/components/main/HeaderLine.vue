@@ -1,7 +1,9 @@
 <template>
   <header class="header wow fadeInDown" data-wow-duration="0.5s">
     <div class="container">
-      <th-logo class="header__logo"></th-logo>
+      <router-link to="/">
+        <th-logo class="header__logo"></th-logo>
+      </router-link>
       <div
         class="mmenu-button"
         :class="{ active: mobileMenuOpened }"
@@ -12,11 +14,19 @@
         <span></span>
       </div>
       <div class="header__nav" :class="{ active: mobileMenuOpened }">
+        <a href="#pricing" class="header__nav-link header__nav-link--default">{{
+          $t("Тарифы")
+        }}</a>
+        <router-link
+          to="/info/contacts"
+          class="header__nav-link header__nav-link--default"
+          >{{ "Контакты" }}</router-link
+        >
         <a
           target="_blank"
           class="header__nav-link button button--accent button--small"
           href="//app.tenderhelp.com.ua/login"
-          >Вход для пользователя</a
+          >{{ $t("Для зарегистрированных пользователей") }}</a
         >
       </div>
     </div>
@@ -59,6 +69,19 @@ export default {
 
     &-link {
       margin-right: 40px;
+      &--default {
+        font-family: "Proxima Nova", sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4e4e56;
+        text-decoration: none;
+        transition: opacity 0.2s linear;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
 
       &:last-child {
         margin-right: 0;

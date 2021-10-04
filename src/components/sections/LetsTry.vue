@@ -6,7 +6,7 @@
         data-wow-duration="0.5s"
       ></div>
       <div class="lets-try__title wow fadeInUp" data-wow-duration="0.5s">
-        Готовы попробовать?
+        {{ $t("Готовы попробовать?") }}
       </div>
       <!--      <div class="lets-try__input wow fadeInUp" data-wow-duration="0.5s">-->
       <!--        <div class="input simple">-->
@@ -51,7 +51,7 @@
           class="button button--accent"
           target="_blank"
         >
-          Регистрация
+          {{ $t("Регистрация") }}
         </a>
       </div>
     </div>

@@ -24,24 +24,26 @@
         data-wow-duration="0.5s"
         data-wow-delay="0.2s"
       >
-        Тендер — это просто
+        {{ $t("Тендер — это просто") }}
       </div>
       <div
         class="header-banner__sub-title wow fadeInUp"
         data-wow-duration="0.5s"
         data-wow-delay="0.3s"
-      >
-        Сервис автоматической подготовки документов, <br />
-        для тендерных торгов и открытых закупок
-      </div>
+        v-html="
+          $t(
+            'Сервис автоматической подготовки документов, <br />для тендерных торгов и открытых закупок'
+          )
+        "
+      ></div>
       <div
         class="header-banner__link wow fadeInUp"
         data-wow-duration="0.5s"
         data-wow-delay="0.4s"
       >
-        <span class="button button--white" @click="scrollToId('lets-try')"
-          >Начать роботу с beta бесплатно</span
-        >
+        <span class="button button--white" @click="scrollToId('lets-try')">{{
+          $t("Начать роботу с tenderhelp")
+        }}</span>
       </div>
 
       <div
