@@ -125,6 +125,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__screen {

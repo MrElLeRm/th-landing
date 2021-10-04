@@ -29,7 +29,7 @@ export default {
     HeaderBanner,
   },
   created() {
-    new WOW().sync();
+    new WOW().init();
   },
 };
 </script>

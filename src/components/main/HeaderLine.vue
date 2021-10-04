@@ -20,7 +20,7 @@
         <router-link
           to="/info/contacts"
           class="header__nav-link header__nav-link--default"
-          >{{ "Контакты" }}</router-link
+          >{{ $t("Контакты") }}</router-link
         >
         <a
           target="_blank"
