@@ -1,34 +1,16 @@
-# th-landing
+<h1>Описание проекта TenderHelp Landing</h1>
 
-## Project setup
-```
-npm install
-```
+<h3>Технологии используемые в разработке:</h3>
+1. Фреймворк Vue.js (v2)
+2. Препроцессор SCSS
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Страницы находятся в папке <b>src/views</b><br/>
+Дочерние и вспомогательные компоненты расположены в папке <b>src/components</b><br/>
+Файлы переводов распологаются в папке <b>src/lang</b>
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<h3>Сборка проекта:</h3>
+1. Склонировать репозиторий
+2. В папке проекта вполнить следующие команды: 
+    1. <code>npm install</code>
+    2. <code>npm run build</code>
+3. Результирующий скомпилированный код будет находится в папке <b>dist</b>
