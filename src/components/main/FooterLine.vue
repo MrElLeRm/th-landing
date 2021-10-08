@@ -4,12 +4,23 @@
       <div class="footer__copyright">Copyright © 2021 Tenderhelp.</div>
       <div class="footer__links">
         <a
-          href="/docs/agreement.pdf"
+          href="/docs/security.pdf"
           target="_blank"
           class="footer__link link link--default"
-          >Условия использования</a
+          >Умови доступу до сервісу</a
         >
-        <a href="#" class="footer__link link link--default">Публичная оферта</a>
+        <a
+          href="/docs/no-tell.pdf"
+          target="_blank"
+          class="footer__link link link--default"
+          >Умови використання</a
+        >
+        <a
+          href="/docs/oferta.pdf"
+          target="_blank"
+          class="footer__link link link--default"
+          >Публічна оферта</a
+        >
         <a
           target="_blank"
           href="https://www.facebook.com/tenderhelp.com.ua"

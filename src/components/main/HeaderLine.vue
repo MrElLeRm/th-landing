@@ -14,9 +14,11 @@
         <span></span>
       </div>
       <div class="header__nav" :class="{ active: mobileMenuOpened }">
-        <a href="#pricing" class="header__nav-link header__nav-link--default">{{
-          $t("Тарифы")
-        }}</a>
+        <a
+          href="/#pricing"
+          class="header__nav-link header__nav-link--default"
+          >{{ $t("Тарифы") }}</a
+        >
         <router-link
           to="/info/contacts"
           class="header__nav-link header__nav-link--default"

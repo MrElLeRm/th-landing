@@ -11,13 +11,10 @@
 </style>
 <script>
 import HeaderLine from "@/components/main/HeaderLine";
-import { WOW } from "wowjs";
 import FooterLine from "@/components/main/FooterLine";
 
 export default {
   components: { FooterLine, HeaderLine },
-  mounted() {
-    new WOW().init();
-  },
+  mounted() {},
 };
 </script>

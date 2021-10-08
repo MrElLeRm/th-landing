@@ -15,7 +15,6 @@ import ForWho from "@/components/sections/ForWho";
 import WhyWe from "@/components/sections/WhyWe";
 import HowStart from "@/components/sections/HowStart";
 import LetsTry from "@/components/sections/LetsTry";
-import { WOW } from "wowjs";
 import Pricing from "@/components/sections/Pricing";
 
 export default {
@@ -28,8 +27,11 @@ export default {
     ForWho,
     HeaderBanner,
   },
-  created() {
-    new WOW().init();
+  mounted() {
+    document.querySelectorAll(".wow").forEach((el) => {
+      el.classList.remove("wow");
+      el.style = "";
+    });
   },
 };
 </script>

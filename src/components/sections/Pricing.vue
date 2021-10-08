@@ -527,22 +527,22 @@ export default {
 
     &--corp & {
       &-header {
-        background-color: #ffffff;
+        background-color: #a30000;
 
         &-action {
-          color: #4050e8;
+          color: #fff;
           background: transparent;
-          border: 1px solid #4050e8;
+          border: 1px solid #fff;
         }
       }
 
-      &-name {
-        color: #0a0a0b;
-      }
-
-      &-price {
-        color: #0a0a0b;
-      }
+      //&-name {
+      //  color: #0a0a0b;
+      //}
+      //
+      //&-price {
+      //  color: #0a0a0b;
+      //}
 
       &-action {
         color: #4050e8;
@@ -613,7 +613,6 @@ export default {
     }
 
     &-content {
-      margin-top: auto;
     }
 
     &-options {
