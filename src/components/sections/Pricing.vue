@@ -388,7 +388,7 @@
                     <div class="pricing__item-option-text">
                       {{
                         $t(
-                          "все типи закупок, только для команд, аналитика и дополнительные возможности автоматизации"
+                          "все типы закупок, только для команд, аналитика и дополнительные возможности автоматизации"
                         )
                       }}
                     </div>
@@ -635,6 +635,8 @@ export default {
         align-items: center;
         justify-content: center;
         margin-right: 16px;
+        flex-shrink: 0;
+        flex-grow: 0;
 
         svg {
           width: 100%;
