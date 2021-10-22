@@ -7,19 +7,19 @@
           href="/docs/security.pdf"
           target="_blank"
           class="footer__link link link--default"
-          >Умови доступу до сервісу</a
+          >{{ $t("Условия доступа к сервису") }}</a
         >
         <a
           href="/docs/no-tell.pdf"
           target="_blank"
           class="footer__link link link--default"
-          >Умови використання</a
+          >{{ $t("Условия использования") }}</a
         >
         <a
           href="/docs/oferta.pdf"
           target="_blank"
           class="footer__link link link--default"
-          >Публічна оферта</a
+          >{{ $t("Публичная оферта") }}</a
         >
         <a
           target="_blank"
