@@ -30,6 +30,22 @@
           href="//app.tenderhelp.com.ua/login"
           >{{ $t("Для зарегистрированных пользователей") }}</a
         >
+        <div class="language-switcher">
+          <div
+            class="language-switcher__item"
+            :class="{ active: locale === 'ru' }"
+            @click="switchLanguage('ru')"
+          >
+            Рус
+          </div>
+          <div
+            class="language-switcher__item"
+            :class="{ active: locale === 'uk' }"
+            @click="switchLanguage('uk')"
+          >
+            Укр
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -37,6 +53,7 @@
 
 <script>
 import ThLogo from "@/components/other/ThLogo";
+import { mapState } from "vuex";
 export default {
   name: "HeaderLine",
   components: { ThLogo },
@@ -45,9 +62,15 @@ export default {
       mobileMenuOpened: false,
     };
   },
+  computed: {
+    ...mapState(["locale"]),
+  },
   methods: {
     toggleNav() {
       this.mobileMenuOpened = !this.mobileMenuOpened;
+    },
+    switchLanguage(locale) {
+      this.$store.dispatch("setLocale", locale);
     },
   },
 };
@@ -189,6 +212,30 @@ export default {
         margin-right: 0;
         margin-bottom: 30px;
       }
+    }
+  }
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-right: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &.active {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }
