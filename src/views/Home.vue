@@ -28,13 +28,14 @@ export default {
     HeaderBanner,
   },
   metaInfo: {
-    title: "Головна",
+    title: "Подготовка тендерной документации - TenderHelp",
+    titleTemplate: null,
     meta: [
       {
         vmid: "description",
         name: "description",
         content:
-          "Головна - ТендерХелп - помощь в подготовке тендерной документации.",
+          "Сервис автоматической подготовки документов, для тендерных торгов и открытых закупок - ТендерХелп",
       },
     ],
   },
