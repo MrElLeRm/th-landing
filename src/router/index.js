@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Meta from "vue-meta";
 import Home from "@/views/Home.vue";
 import PaymentInfo from "@/views/Info/Sub/PaymentInfo";
 import Info from "@/views/Info/Info";
@@ -9,6 +10,7 @@ import RefundInfo from "@/views/Info/Sub/RefundInfo";
 import ContactInfo from "@/views/Info/Sub/ContactInfo";
 
 Vue.use(VueRouter);
+Vue.use(Meta);
 
 const routes = [
   {

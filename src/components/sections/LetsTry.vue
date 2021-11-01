@@ -5,46 +5,9 @@
         class="lets-try__dot wow fadeInDownBig"
         data-wow-duration="0.5s"
       ></div>
-      <div class="lets-try__title wow fadeInUp" data-wow-duration="0.5s">
+      <h2 class="lets-try__title wow fadeInUp" data-wow-duration="0.5s">
         {{ $t("Готовы попробовать?") }}
-      </div>
-      <!--      <div class="lets-try__input wow fadeInUp" data-wow-duration="0.5s">-->
-      <!--        <div class="input simple">-->
-      <!--          <div class="input__label">Имя</div>-->
-      <!--          <input-->
-      <!--            type="text"-->
-      <!--            class="input__el"-->
-      <!--            name="name"-->
-      <!--            placeholder="Петр Иванов"-->
-      <!--            title="Имя"-->
-      <!--            v-model="$v.clientName.$model"-->
-      <!--          />-->
-      <!--          <div-->
-      <!--            class="input__error"-->
-      <!--            v-if="formSubmitted && !$v.clientName.required"-->
-      <!--          >-->
-      <!--            Имя должено быть заполнено-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--        <div class="input simple">-->
-      <!--          <div class="input__label">Телефон</div>-->
-      <!--          <input-->
-      <!--            type="text"-->
-      <!--            class="input__el"-->
-      <!--            name="phone"-->
-      <!--            placeholder="+38"-->
-      <!--            title="Телефон"-->
-      <!--            v-model="$v.clientPhone.$model"-->
-      <!--            v-maska="'+38 (###) ###-##-##'"-->
-      <!--          />-->
-      <!--          <div-->
-      <!--            class="input__error"-->
-      <!--            v-if="formSubmitted && !$v.clientPhone.required"-->
-      <!--          >-->
-      <!--            Телефон должен быть заполнен-->
-      <!--          </div>-->
-      <!--        </div>-->
-      <!--      </div>-->
+      </h2>
       <div class="lets-try__button wow fadeInUp" data-wow-duration="0.5s">
         <a
           href="//app.tenderhelp.com.ua/registration"

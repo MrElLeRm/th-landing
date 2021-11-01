@@ -19,14 +19,14 @@
           />
         </svg>
       </div>
-      <div
+      <h1
         class="header-banner__title wow fadeInUp"
         data-wow-duration="0.5s"
         data-wow-delay="0.2s"
       >
         {{ $t("Тендер — это просто") }}
-      </div>
-      <div
+      </h1>
+      <h2
         class="header-banner__sub-title wow fadeInUp"
         data-wow-duration="0.5s"
         data-wow-delay="0.3s"
@@ -35,7 +35,7 @@
             'Сервис автоматической подготовки документов, <br />для тендерных торгов и открытых закупок'
           )
         "
-      ></div>
+      ></h2>
       <div
         class="header-banner__link wow fadeInUp"
         data-wow-duration="0.5s"
@@ -109,6 +109,7 @@ export default {
     font-size: pxToRem(48);
     line-height: pxToRem(67);
     margin-bottom: 24px;
+    margin-top: 0;
   }
 
   &__sub-title {

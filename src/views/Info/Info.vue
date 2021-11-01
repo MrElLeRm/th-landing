@@ -144,7 +144,7 @@ export default {
 <style lang="scss">
 .info {
   &__text-content {
-    h2 {
+    h1 {
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       font-size: 40px;

@@ -7,24 +7,28 @@
           href="/docs/security.pdf"
           target="_blank"
           class="footer__link link link--default"
+          rel="nofollow"
           >{{ $t("Условия доступа к сервису") }}</a
         >
         <a
           href="/docs/no-tell.pdf"
           target="_blank"
           class="footer__link link link--default"
+          rel="nofollow"
           >{{ $t("Условия использования") }}</a
         >
         <a
           href="/docs/oferta.pdf"
           target="_blank"
           class="footer__link link link--default"
+          rel="nofollow"
           >{{ $t("Публичная оферта") }}</a
         >
         <a
           target="_blank"
           href="https://www.facebook.com/tenderhelp.com.ua"
           class="footer__link footer__link--icon link link--default"
+          rel="nofollow"
         >
           <svg
             width="40"

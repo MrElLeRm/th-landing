@@ -1,6 +1,6 @@
 <template>
   <div class="info-payment info__text-content">
-    <h2>Умови оплати</h2>
+    <h1>Умови оплати</h1>
     <p class="bold big">
       Оплата за надання доступу проводиться шляхом здійснення безготівкового
       грошового переказу чи банківською карткою на сайті.
@@ -67,6 +67,17 @@
 <script>
 export default {
   name: "PaymentInfo",
+  metaInfo: {
+    title: "Умови оплати",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "Умови оплати - ТендерХелп - помощь в подготовке тендерной документации.",
+      },
+    ],
+  },
 };
 </script>
 

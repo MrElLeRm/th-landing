@@ -2,7 +2,7 @@
   <div class="how-start">
     <div class="container">
       <div class="how-start__info wow fadeInLeft" data-wow-duration="0.5s">
-        <div class="how-start__title">{{ $t("Как начать работу") }}</div>
+        <h2 class="how-start__title">{{ $t("Как начать работу") }}</h2>
       </div>
       <div class="how-start__list">
         <div

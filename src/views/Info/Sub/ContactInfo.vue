@@ -1,6 +1,6 @@
 <template>
   <div class="info-contact info__text-content">
-    <h2>Контакти</h2>
+    <h1>Контакти</h1>
     <p class="bold big">
       Багатоканальний телефон гарячої лінії, щодня з 9:00 до 18:00
     </p>
@@ -17,6 +17,17 @@
 <script>
 export default {
   name: "ContactInfo",
+  metaInfo: {
+    title: "Контакти",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "Контакти - ТендерХелп - помощь в подготовке тендерной документации.",
+      },
+    ],
+  },
 };
 </script>
 

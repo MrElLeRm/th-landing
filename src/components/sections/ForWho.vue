@@ -2,7 +2,7 @@
   <div class="for-who">
     <div class="container">
       <div class="for-who__info wow fadeInLeft" data-wow-duration="0.5s">
-        <div class="for-who__title">{{ $t("Для кого") }}</div>
+        <h2 class="for-who__title">{{ $t("Для кого") }}</h2>
       </div>
       <div class="for-who__list">
         <div

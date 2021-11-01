@@ -1,9 +1,9 @@
 <template>
   <div class="why-we">
     <div class="container">
-      <div class="why-we__title wow fadeInUp" data-wow-duration="0.5s">
+      <h2 class="why-we__title wow fadeInUp" data-wow-duration="0.5s">
         {{ $t("Почему Tenderhelp") }}
-      </div>
+      </h2>
     </div>
     <div class="why-we__list">
       <div
@@ -42,9 +42,9 @@
               </svg>
             </div>
             <div class="why-we__item-content">
-              <div class="why-we__item-title">
+              <h2 class="why-we__item-title">
                 {{ $t("В 3 раза больше тендеров") }}
-              </div>
+              </h2>
               <div class="why-we__item-text">
                 {{
                   $t(
@@ -120,7 +120,7 @@
               </svg>
             </div>
             <div class="why-we__item-content">
-              <div class="why-we__item-title">{{ $t("Без ошибок") }}</div>
+              <h2 class="why-we__item-title">{{ $t("Без ошибок") }}</h2>
               <div class="why-we__item-text">
                 {{
                   $t(
@@ -221,7 +221,7 @@
               </svg>
             </div>
             <div class="why-we__item-content">
-              <div class="why-we__item-title">{{ $t("Контроль") }}</div>
+              <h2 class="why-we__item-title">{{ $t("Контроль") }}</h2>
               <div class="why-we__item-text">
                 {{
                   $t(
@@ -310,7 +310,7 @@
               </svg>
             </div>
             <div class="why-we__item-content">
-              <div class="why-we__item-title">{{ $t("Уведомления") }}</div>
+              <h2 class="why-we__item-title">{{ $t("Уведомления") }}</h2>
               <div class="why-we__item-text">
                 {{
                   $t(
@@ -492,6 +492,7 @@ export default {
       font-size: pxToRem(32);
       line-height: pxToRem(45);
       color: $primaryBlack;
+      margin-top: 0;
       margin-bottom: 27px;
     }
 

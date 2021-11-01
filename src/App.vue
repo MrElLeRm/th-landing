@@ -16,5 +16,8 @@ import FooterLine from "@/components/main/FooterLine";
 export default {
   components: { FooterLine, HeaderLine },
   mounted() {},
+  metaInfo: {
+    titleTemplate: "%s | TenderHelp",
+  },
 };
 </script>

@@ -27,6 +27,17 @@ export default {
     ForWho,
     HeaderBanner,
   },
+  metaInfo: {
+    title: "Головна",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "Головна - ТендерХелп - помощь в подготовке тендерной документации.",
+      },
+    ],
+  },
   mounted() {
     document.querySelectorAll(".wow").forEach((el) => {
       el.classList.remove("wow");

@@ -1,10 +1,10 @@
 <template>
   <div class="pricing__all">
     <div class="container">
-      <div
+      <h2
         class="pricing__title"
         v-html="$t('Выберите свой план <br />Tenderhelp')"
-      ></div>
+      ></h2>
     </div>
     <div class="pricing" id="pricing">
       <div class="container">

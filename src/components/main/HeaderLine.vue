@@ -17,17 +17,20 @@
         <a
           href="/#pricing"
           class="header__nav-link header__nav-link--default"
+          :title="$t('Тарифы')"
           >{{ $t("Тарифы") }}</a
         >
         <router-link
           to="/info/contacts"
           class="header__nav-link header__nav-link--default"
+          :title="$t('Контакты')"
           >{{ $t("Контакты") }}</router-link
         >
         <a
           target="_blank"
           class="header__nav-link button button--accent button--small"
           href="//app.tenderhelp.com.ua/login"
+          rel="nofollow"
           >{{ $t("Для зарегистрированных пользователей") }}</a
         >
         <div class="language-switcher">
