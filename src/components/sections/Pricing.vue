@@ -154,7 +154,7 @@
               </div>
               <div class="pricing__item-price">грн 3 000</div>
               <div class="pricing__item-header-action" @click="toRegistration">
-                {{ $t("Подключить") }}
+                {{ $t("Попробовать") }}
               </div>
               <div class="pricing__item-descr">
                 {{
@@ -275,7 +275,7 @@
               </div>
               <div class="pricing__item-actions">
                 <div class="pricing__item-action" @click="toRegistration">
-                  {{ $t("Подключить") }}
+                  {{ $t("Попробовать") }}
                 </div>
               </div>
             </div>
