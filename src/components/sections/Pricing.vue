@@ -49,9 +49,9 @@
                   </div>
                   <div class="pricing__item-option-content">
                     <div class="pricing__item-option-title">
-                      доступные коди ДК закупки:
+                      {{ $t("доступные коды ДК закупки") }}
                     </div>
-                    <div class="pricing__item-option-text">все</div>
+                    <div class="pricing__item-option-text">{{ $t("все") }}</div>
                   </div>
                 </div>
                 <div class="pricing__item-option">
@@ -133,7 +133,7 @@
                     <div class="pricing__item-option-text">
                       {{
                         $t(
-                          "урощенные процедури, тольки для единственного пользователя"
+                          "упрощенные процедуры, только для одного пользователя"
                         )
                       }}
                     </div>
@@ -150,7 +150,7 @@
           <div class="pricing__item pricing__item--pro">
             <div class="pricing__item-header">
               <div class="pricing__item-name">
-                Профи <small>(газ/электро энергия)</small>
+                {{ $t("Профи") }}
               </div>
               <div class="pricing__item-price">грн 3 000</div>
               <div class="pricing__item-header-action" @click="toRegistration">
@@ -184,10 +184,10 @@
                   </div>
                   <div class="pricing__item-option-content">
                     <div class="pricing__item-option-title">
-                      {{ $t("доступные коди ДК закупки") }}:
+                      {{ $t("доступные коды ДК закупки") }}:
                     </div>
                     <div class="pricing__item-option-text">
-                      09310000-5, 09120000-6, 09123000-7
+                      {{ $t("все") }}
                     </div>
                   </div>
                 </div>
@@ -210,8 +210,12 @@
                     </svg>
                   </div>
                   <div class="pricing__item-option-content">
-                    <div class="pricing__item-option-title">тип закупки:</div>
-                    <div class="pricing__item-option-text">упрощенные</div>
+                    <div class="pricing__item-option-title">
+                      {{ $t("тип закупки") }}:
+                    </div>
+                    <div class="pricing__item-option-text">
+                      {{ $t("все") }}
+                    </div>
                   </div>
                 </div>
                 <div class="pricing__item-option">
@@ -263,7 +267,7 @@
                     </div>
                     <div class="pricing__item-option-text">
                       {{
-                        $t("все типи закупок, возможность создовать команди")
+                        $t("все типы закупок, возможность создавать команды")
                       }}
                     </div>
                   </div>
@@ -278,7 +282,7 @@
           </div>
           <div class="pricing__item pricing__item--corp">
             <div class="pricing__item-header">
-              <div class="pricing__item-name">{{ $t("Корпоративний") }}</div>
+              <div class="pricing__item-name">{{ $t("Корпоративный") }}</div>
               <div class="pricing__item-price">{{ $t("Договорная") }}</div>
               <div class="pricing__item-header-action" @click="toRegistration">
                 {{ $t("Связаться с нами") }}
@@ -306,7 +310,7 @@
                   </div>
                   <div class="pricing__item-option-content">
                     <div class="pricing__item-option-title">
-                      {{ $t("доступные коди ДК закупки") }}:
+                      {{ $t("доступные коды ДК закупки") }}:
                     </div>
                     <div class="pricing__item-option-text">{{ $t("все") }}</div>
                   </div>
