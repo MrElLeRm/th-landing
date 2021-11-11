@@ -135,7 +135,6 @@ export default {
     margin-right: 44px;
     flex-shrink: 0;
     flex-grow: 0;
-    margin-top: 75px;
   }
 
   &__title {
@@ -145,6 +144,7 @@ export default {
     line-height: pxToRem(56);
     color: $primaryBlack;
     margin-bottom: 24px;
+    margin-top: 14px;
   }
 
   &__sub-title {

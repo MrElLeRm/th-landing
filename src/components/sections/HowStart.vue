@@ -80,7 +80,7 @@
           </div>
           <div class="how-start__item-title">{{ $t("Сообщение") }}</div>
           <div class="how-start__item-text">
-            {{ $t("Получаете уведомление об активации") }}
+            {{ $t("Получаете уведомление об активации.") }}
           </div>
         </div>
         <div
@@ -144,6 +144,7 @@ export default {
     line-height: pxToRem(56);
     color: $primaryBlack;
     margin-bottom: 24px;
+    margin-top: 14px;
   }
 
   &__sub-title {

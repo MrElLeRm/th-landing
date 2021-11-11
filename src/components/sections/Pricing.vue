@@ -499,6 +499,12 @@ export default {
     display: flex;
     flex-direction: column;
 
+    &-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
     &--base & {
       &-header {
         background-color: #3ca6cd;
@@ -669,6 +675,7 @@ export default {
     &-actions {
       display: flex;
       justify-content: center;
+      margin-top: auto;
     }
 
     &-action {
