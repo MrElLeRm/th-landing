@@ -20,6 +20,10 @@
             <div class="pricing__item-header">
               <div class="pricing__item-name">{{ $t("Старт") }}</div>
               <div class="pricing__item-price">грн 900</div>
+              <div class="pricing__item-price-free">{{ $t("бесплатно") }}</div>
+              <div class="pricing__item-price-free-descr">
+                {{ "*" + $t("до конца 2021") }}
+              </div>
               <div class="pricing__item-header-action" @click="toRegistration">
                 {{ $t("Попробовать") }}
               </div>
@@ -153,6 +157,10 @@
                 {{ $t("Профи") }}
               </div>
               <div class="pricing__item-price">грн 3 000</div>
+              <div class="pricing__item-price-free">{{ $t("бесплатно") }}</div>
+              <div class="pricing__item-price-free-descr">
+                {{ "*" + $t("до конца 2021") }}
+              </div>
               <div class="pricing__item-header-action" @click="toRegistration">
                 {{ $t("Попробовать") }}
               </div>
@@ -284,6 +292,10 @@
             <div class="pricing__item-header">
               <div class="pricing__item-name">{{ $t("Корпоративный") }}</div>
               <div class="pricing__item-price">{{ $t("Договорная") }}</div>
+              <div class="pricing__item-price-free">{{ $t("бесплатно") }}</div>
+              <div class="pricing__item-price-free-descr">
+                {{ "*" + $t("до конца 2021") }}
+              </div>
               <div class="pricing__item-header-action" @click="toRegistration">
                 {{ $t("Связаться с нами") }}
               </div>
@@ -522,22 +534,22 @@ export default {
 
     &--pro & {
       &-header {
-        background-color: #4050e8;
+        background-color: #a30000;
 
         &-action {
-          color: #4050e8;
+          color: #a30000;
         }
       }
 
       &-action {
-        background-color: #4050e8;
+        background-color: #a30000;
         color: #ffffff;
       }
     }
 
     &--corp & {
       &-header {
-        background-color: #a30000;
+        background-color: #4050e8;
 
         &-action {
           color: #fff;
@@ -606,11 +618,25 @@ export default {
     &-price {
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
-      font-size: 24px;
-      line-height: 34px;
+      font-size: 18px;
+      line-height: 22px;
       text-align: center;
       color: #ffffff;
-      margin-bottom: 16px;
+      margin-bottom: 4px;
+      text-decoration: line-through;
+
+      &-free {
+        color: #fff;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 600;
+        margin-top: 10px;
+
+        &-descr {
+          color: #fff;
+          margin-bottom: 16px;
+        }
+      }
     }
 
     &-descr {
