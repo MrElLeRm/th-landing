@@ -580,6 +580,7 @@ export default {
       flex-direction: column;
       align-items: center;
       margin-bottom: 40px;
+      min-height: 310px;
 
       &-action {
         padding: 10px 24px;
